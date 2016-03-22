@@ -1,0 +1,29 @@
+<body>
+<h1>Create A Trip</h1>
+
+<div>
+    <p>Great, let's get started.</p>
+    <p>Please choose from the list of cities below to plan your trip.</p>
+</div>
+
+
+<div ng-controller="CitiesDropDownController">
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Cities
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li ng-repeat="city in cities"><a ng-click="$parent.current = city">{{city}}</a></li> 
+        </ul>
+    </div> 
+</div>
+    
+    
+    
+<div ng-controller="AttractionsController">
+    <ul ng-show=>
+        <li ng-repeat="attraction in attractions">{{attraction}}</li>
+    </ul>
+</div>
+    
+</body>
